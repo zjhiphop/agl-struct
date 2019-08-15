@@ -34,7 +34,6 @@ func TestInsert(t *testing.T) {
 
 	result, err = arr.Append(1323)
 
-
 	if !result {
 		t.Error(err)
 	}

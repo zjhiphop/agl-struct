@@ -33,6 +33,10 @@ func (self *Array) Len() int {
 	return self.length
 }
 
+func (self *Array) Data() []int {
+	return self.data
+}
+
 // find specfic data index value
 func (self *Array) FindIndexByData(data int) int {
 	for index, value := range self.data {
