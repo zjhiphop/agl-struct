@@ -1,6 +1,6 @@
 package sort
 
-func SelectionSort1(arr []int, len int) {
+func SelectionSort(arr []int, len int) {
 	if len <=1 {
 		return
 	}
