@@ -1,12 +1,12 @@
 package main
 
 import (
+	"./array"
+	"./search"
+	"./sort"
 	"fmt"
 	"math/rand"
 	"time"
-
-	"./array"
-	"./sort"
 )
 
 func main() {
@@ -23,4 +23,6 @@ func main() {
 	sort.BucketSort(arr.Data(), arr.Len())
 
 	fmt.Println(arr.Data())
+
+	println(search.BSearch(arr.Data(), arr.Len(), 130))
 }
